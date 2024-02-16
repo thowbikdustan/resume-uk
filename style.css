@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'IosevkaCurlySlab-Medium';
+    src: url('fonts/WOFF2/IosevkaCurlySlab-Medium.woff2') format('woff2');
+         /* url('/fonts/mycustomfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+font-family: 'IosevkaCurlySlab-MediumItalic';
+src: url('fonts/WOFF2/IosevkaCurlySlab-MediumItalic.woff2') format('woff2');
+        /* url('/fonts/mycustomfont.woff') format('woff'); */
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'IosevkaCurlySlab-LightItalic';
+    src: url('fonts/WOFF2/IosevkaCurlySlab-LightItalic.woff2') format('woff2');
+            /* url('/fonts/mycustomfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'IosevkaCurlySlab-BoldOblique';
+    src: url('fonts/WOFF2/IosevkaCurlySlab-BoldOblique.woff2') format('woff2');
+            /* url('/fonts/mycustomfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'IosevkaCurlySlab-LightOblique';
+    src: url('fonts/WOFF2/IosevkaCurlySlab-LightOblique.woff2') format('woff2');
+            /* url('/fonts/mycustomfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'IosevkaCurlySlab-MediumOblique';
+    src: url('fonts/WOFF2/IosevkaCurlySlab-MediumOblique.woff2') format('woff2');
+            /* url('/fonts/mycustomfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    font-family: IosevkaCurlySlab-BoldOblique;
+    width: 250mm;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    color: #1c1c1c;
+}
+
+header {
+    text-align: right ;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+.section-heading:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.timeline {
+    flex-basis: 30%;
+    float: left;
+    width: 20%;
+    margin-right: 20px;
+    height: auto;
+}
+.content {
+    overflow: hidden; /* Clear float */
+    flex-basis: 70%;
+}
+
+.content p {
+    text-align: left;
+    margin-top: 0;
+}
+
+.content a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#profile p {
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
+
+#education .content p {
+    margin-top: 25px;
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
+
+#education .content a{
+    /* margin-top: 25px; */
+    font-family: IosevkaCurlySlab-LightOblique;
+}
+
+#certifications p{
+    margin-top: 10px;
+}
+
+#certifications .content p {
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
+
+#technical_skills p{
+    margin-top: 10px;
+}
+
+#technical_skills .content p{
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
+
+#work_experience p{
+    margin-top: 23px;
+}
+
+#work_experience .content h4{
+    margin-top: -14px;
+    padding: none;
+    font-family: IosevkaCurlySlab-LightOblique;
+}
+
+#work_experience .content li{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
+
+#interests {
+    margin-top: 20px;
+}
+
+#interests .content p{
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
+
+
+.bullet_points li{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-family: IosevkaCurlySlab-MediumOblique;
+}
