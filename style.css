@@ -111,6 +111,7 @@ header {
 #education .content a{
     /* margin-top: 25px; */
     font-family: IosevkaCurlySlab-LightOblique;
+    color:  #737373;
 }
 
 #certifications p{
@@ -137,6 +138,7 @@ header {
     margin-top: -14px;
     padding: none;
     font-family: IosevkaCurlySlab-LightOblique;
+    color:  #737373;
 }
 
 #work_experience .content li{
