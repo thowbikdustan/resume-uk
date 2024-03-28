@@ -46,17 +46,69 @@ font-style: normal;
     font-style: normal;
     }
 
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('fonts/OpenSans/OpenSans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansCondensed-Italic';
+    src: url('fonts/OpenSans/OpenSansCondensed-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansCondensed-Regular';
+    src: url('fonts/OpenSans/OpenSansCondensed-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansSemiCondensed-Italic';
+    src: url('fonts/OpenSans/OpenSansSemiCondensed-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansSemiCondensed-Regular';
+    src: url('fonts/OpenSans/OpenSansSemiCondensed-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: IosevkaCurlySlab-BoldOblique;
+    font-family: OpenSans-Italic;
     width: 250mm;
     margin: 0 auto;
     background-color: hsl(0, 0%, 100%);
     color: #1c1c1c;
+    letter-spacing: 0.3px;
 }
 
 header {
     text-align: right ;
 }
+
+#links{
+    word-spacing: 20px;
+}
+
+#left-title{
+    font-style: bold;
+}
+
 .section {
     margin-bottom: 20px;
 }
@@ -100,18 +152,24 @@ header {
 }
 
 #profile p {
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    font-size: larger;
+    letter-spacing: 0.3px;
 }
 
 #education .content p {
     margin-top: 25px;
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    font-size: larger;
+    letter-spacing: 0.3px;
 }
 
 #education .content a{
-    /* margin-top: 25px; */
-    font-family: IosevkaCurlySlab-LightOblique;
+    margin-top: 25px;
+    font-family: OpenSans-Italic;
     color:  #737373;
+    letter-spacing: 0.3px;
+    font-size: large;
 }
 
 #certifications p{
@@ -119,7 +177,9 @@ header {
 }
 
 #certifications .content p {
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    letter-spacing: 0.3px;
+    font-size: large;
 }
 
 #technical_skills p{
@@ -127,7 +187,9 @@ header {
 }
 
 #technical_skills .content p{
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    letter-spacing: 0.3px;
+    font-size: large;;
 }
 
 #work_experience p{
@@ -137,14 +199,18 @@ header {
 #work_experience .content h4{
     margin-top: -14px;
     padding: none;
-    font-family: IosevkaCurlySlab-LightOblique;
+    font-family: OpenSans-Italic;
     color:  #737373;
+    font-size: large;
+    letter-spacing: 0.3px;
 }
 
 #work_experience .content li{
     padding-left: 20px;
     padding-top: 10px;
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    font-size: large;
+    letter-spacing: 0.3px;
 }
 
 #interests {
@@ -152,7 +218,9 @@ header {
 }
 
 #interests .content p{
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    font-size: large;
+    letter-spacing: 0.3px;
 }
 
 
@@ -161,5 +229,7 @@ header {
     margin-left: 0;
     margin-bottom: 20px;
     padding-left: 20px;
-    font-family: IosevkaCurlySlab-MediumOblique;
+    font-family: OpenSansCondensed-Regular;
+    font-size: large;
+    letter-spacing: 0.3px;
 }
