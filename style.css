@@ -101,6 +101,15 @@ header {
     text-align: right ;
 }
 
+header h1{
+    margin-bottom: 10px;
+}
+
+header p {
+    padding: 0%;
+    margin: 0%;
+}
+
 #links{
     word-spacing: 20px;
 }
@@ -115,7 +124,7 @@ header {
 .section-heading {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: relative;
 }
 .section-heading:after {
@@ -190,6 +199,10 @@ header {
     font-family: OpenSansCondensed-Regular;
     letter-spacing: 0.3px;
     font-size: large;;
+}
+
+#work_experience{
+    margin-top: 23px;
 }
 
 #work_experience p{
