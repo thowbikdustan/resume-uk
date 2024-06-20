@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 pdfkit = "^1.0.0"
 wkhtmltopdf = "^0.2"
+pyhtml2pdf = "^0.0.7"
 
 
 [build-system]
