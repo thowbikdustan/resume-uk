@@ -21,7 +21,7 @@ def server():
         httpd.serve_forever()
 
 def save_as_pdf():
-    pdfkit.from_url('http://localhost:8000', 'resume.pdf', options=options)
+    pdfkit.from_url(f'http://localhost:{PORT}', 'resume.pdf', options=options)
 
 if __name__ == "__main__":
     
