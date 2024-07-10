@@ -1,5 +1,7 @@
 # Resume Template
 
+### Note: This version of pdf has all the styling. But it cannot be read by any ATS because of the custom fonts added 
+
 This is a standard resume template created in classic HTML and CSS for students appyling to UK jobs.
 
 If you are a good developer and have a coffee break time, feel free to edit the template to make it better and create a pull request.
