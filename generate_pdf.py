@@ -10,13 +10,18 @@ import time
 PORT = 8000
 Handler = http.server.SimpleHTTPRequestHandler
 
+options = {
+    'encoding': 'UTF-8',
+    'no-outline': None
+}
+
 def server():
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         print(f"Serving on Port: {PORT}")
         httpd.serve_forever()
 
 def save_as_pdf():
-    pdfkit.from_url('http://localhost:8000', 'resume1.pdf')
+    pdfkit.from_url('http://localhost:8000', 'resume.pdf', options=options)
 
 if __name__ == "__main__":
     

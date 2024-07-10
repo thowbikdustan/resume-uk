@@ -1,95 +1,5 @@
-@font-face {
-    font-family: 'IosevkaCurlySlab-Medium';
-    src: url('fonts/WOFF2/IosevkaCurlySlab-Medium.woff2') format('woff2');
-         /* url('/fonts/mycustomfont.woff') format('woff'); */
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
-font-family: 'IosevkaCurlySlab-MediumItalic';
-src: url('fonts/WOFF2/IosevkaCurlySlab-MediumItalic.woff2') format('woff2');
-        /* url('/fonts/mycustomfont.woff') format('woff'); */
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face {
-    font-family: 'IosevkaCurlySlab-LightItalic';
-    src: url('fonts/WOFF2/IosevkaCurlySlab-LightItalic.woff2') format('woff2');
-            /* url('/fonts/mycustomfont.woff') format('woff'); */
-    font-weight: normal;
-    font-style: normal;
-    }
-
-@font-face {
-    font-family: 'IosevkaCurlySlab-BoldOblique';
-    src: url('fonts/WOFF2/IosevkaCurlySlab-BoldOblique.woff2') format('woff2');
-            /* url('/fonts/mycustomfont.woff') format('woff'); */
-    font-weight: normal;
-    font-style: normal;
-    }
-
-@font-face {
-    font-family: 'IosevkaCurlySlab-LightOblique';
-    src: url('fonts/WOFF2/IosevkaCurlySlab-LightOblique.woff2') format('woff2');
-            /* url('/fonts/mycustomfont.woff') format('woff'); */
-    font-weight: normal;
-    font-style: normal;
-    }
-
-@font-face {
-    font-family: 'IosevkaCurlySlab-MediumOblique';
-    src: url('fonts/WOFF2/IosevkaCurlySlab-MediumOblique.woff2') format('woff2');
-            /* url('/fonts/mycustomfont.woff') format('woff'); */
-    font-weight: normal;
-    font-style: normal;
-    }
-
-@font-face {
-    font-family: 'OpenSans-Italic';
-    src: url('fonts/OpenSans/OpenSans-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src: url('fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansCondensed-Italic';
-    src: url('fonts/OpenSans/OpenSansCondensed-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansCondensed-Regular';
-    src: url('fonts/OpenSans/OpenSansCondensed-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansSemiCondensed-Italic';
-    src: url('fonts/OpenSans/OpenSansSemiCondensed-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansSemiCondensed-Regular';
-    src: url('fonts/OpenSans/OpenSansSemiCondensed-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: OpenSans-Italic;
+    font-family: 'Times New Roman', Times, serif;
     width: 250mm;
     margin: 0 auto;
     background-color: hsl(0, 0%, 100%);
@@ -98,11 +8,11 @@ body {
 }
 
 header {
-    text-align: right ;
+    text-align: right;
 }
 
-header h1{
-    margin-bottom: 10px;
+header h1 {
+    margin-bottom: 5px;
 }
 
 header p {
@@ -110,23 +20,26 @@ header p {
     margin: 0%;
 }
 
-#links{
+#links {
     word-spacing: 20px;
 }
 
-#left-title{
+#left-title {
     font-style: bold;
 }
 
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
+
 .section-heading {
+    font-style: italic;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     position: relative;
 }
+
 .section-heading:after {
     content: "";
     display: block;
@@ -145,8 +58,10 @@ header p {
     margin-right: 20px;
     height: auto;
 }
+
 .content {
-    overflow: hidden; /* Clear float */
+    overflow: hidden;
+    /* Clear float */
     flex-basis: 70%;
 }
 
@@ -155,94 +70,88 @@ header p {
     margin-top: 0;
 }
 
-.content a{
+.content a {
+    font-style: oblique;
     text-decoration: none;
     color: inherit;
 }
 
 #profile p {
-    font-family: OpenSansCondensed-Regular;
     font-size: larger;
     letter-spacing: 0.3px;
 }
 
 #education .content p {
-    margin-top: 25px;
-    font-family: OpenSansCondensed-Regular;
+    margin-top: 5px;
     font-size: larger;
     letter-spacing: 0.3px;
 }
 
-#education .content a{
-    margin-top: 25px;
-    font-family: OpenSans-Italic;
-    color:  #737373;
+#education .content a {
+    margin-top: 10px;
+    color: #737373;
     letter-spacing: 0.3px;
     font-size: large;
 }
 
-#certifications p{
+#certifications p {
     margin-top: 10px;
 }
 
 #certifications .content p {
-    font-family: OpenSansCondensed-Regular;
     letter-spacing: 0.3px;
     font-size: large;
 }
 
-#technical_skills p{
+#technical_skills p {
     margin-top: 10px;
 }
 
-#technical_skills .content p{
-    font-family: OpenSansCondensed-Regular;
+#technical_skills .content p {
     letter-spacing: 0.3px;
-    font-size: large;;
+    font-size: large;
+    ;
 }
 
-#work_experience{
+#work_experience {
     margin-top: 23px;
 }
 
-#work_experience p{
+#work_experience p {
     margin-top: 23px;
 }
 
-#work_experience .content h4{
+#work_experience .content h4 {
     margin-top: -14px;
     padding: none;
-    font-family: OpenSans-Italic;
-    color:  #737373;
+    font-style: oblique;
+    color: #737373;
     font-size: large;
     letter-spacing: 0.3px;
 }
 
-#work_experience .content li{
+#work_experience .content li {
+    margin-top: 2px;
     padding-left: 20px;
-    padding-top: 10px;
-    font-family: OpenSansCondensed-Regular;
+    padding-top: 3px;
     font-size: large;
     letter-spacing: 0.3px;
 }
 
 #interests {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
-#interests .content p{
-    font-family: OpenSansCondensed-Regular;
+#interests .content p {
     font-size: large;
     letter-spacing: 0.3px;
 }
 
 
-.bullet_points li{
-    margin-top: 0;
+.bullet_points li {
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     padding-left: 20px;
-    font-family: OpenSansCondensed-Regular;
     font-size: large;
     letter-spacing: 0.3px;
 }
