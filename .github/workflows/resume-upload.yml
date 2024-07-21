@@ -17,11 +17,10 @@ jobs:
         with:
           python-version: '3.11'
       
-      - name: install poetry & packages
+      - name: install packages
         run: |
           python -m pip install --upgrade pip
-          pip install poetry
-          poetry install
+          pip install -r requirements.txt
       
       - name: save pdf file
         run : |
