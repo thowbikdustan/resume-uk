@@ -18,25 +18,46 @@ file_metadata = {
     'parents': [folder_id]
 }
 
-def upload():
-    # Authenticating using servcie account
+# Authenticating using service account
+def authenticate(service_account_secret, scopes):
     credentials = service_account.Credentials.from_service_account_info(
-        SERVICE_ACCOUNT_SECRET, scopes=SCOPES)
+        service_account_secret, scopes=scopes)
 
     # Creating the dirve API client
     service = build('drive', 'v3', credentials=credentials)
+    return service
 
-    # Create a MediaFileUpload object
-    media = MediaFileUpload(file, resumable=True)
+def upload(service, file, folder_id, file_metadata):
 
-    # Uploading File
-    uploaded_file = service.files().create(
-                        body=file_metadata,
-                        media_body=media,
-                        fields='id'
-                        ).execute()
-    
-    print("\n--------- File Uploaded ----------")
-    print(f'File ID: {uploaded_file.get("id")}')
-    
-upload()
+    query = f"'{folder_id}' in parents and name = '{file}' and trashed = false"
+    results = service.files().list(
+        q=query,
+        spaces='drive',
+        fields='files(id, name)'
+    ).execute()
+
+    items = results.get('files', [])
+
+    if items:
+        # File exists, update it
+        file_id = items[0]['id']
+        media = MediaFileUpload(file, resumable=True)
+        updated_file = service.files().update(
+            fileId=file_id,
+            media_body=media
+        ).execute()
+        print("\n---------File Exists Already, File Updated !! ----------")
+        print(f'Updated file ID: {updated_file.get("id")}')
+    else:
+        # File does not exist, create it
+        media = MediaFileUpload(file, resumable=True)
+        new_file = service.files().create(
+            body=file_metadata,
+            media_body=media,
+            fields='id'
+        ).execute()
+        print("\n--------- File Doesn't Exists, New file created !! ----------")
+        print(f'Uploaded new file ID: {new_file.get("id")}')
+
+service = authenticate(SERVICE_ACCOUNT_SECRET, SCOPES)    
+upload(service, file, folder_id, file_metadata)
